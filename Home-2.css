@@ -282,7 +282,7 @@
       position:relative;
       overflow:hidden;
 
-      /* Background Image */
+      
       background:
         linear-gradient(
           rgba(0,0,0,0.75),
@@ -299,7 +299,7 @@
       padding:0 8%;
     }
 
-    /* Orange Glow */
+    
     .hero::before{
       content:'';
       position:absolute;
@@ -312,7 +312,7 @@
       border-radius:50%;
     }
 
-    /* Blue Glow */
+    
     .hero::after{
       content:'';
       position:absolute;
@@ -469,7 +469,7 @@
 
 
 
-    /* Camera Equipment Card */
+    
     .gear-card{
       position:absolute;
       right:8%;
@@ -502,7 +502,6 @@
       line-height:1.6;
     }
 
-    /* Responsive */
     @media(max-width:992px){
 
       .hero{
@@ -538,7 +537,7 @@
       }
     }
 
-/* Equipment Section */
+
 .equipment{
     padding:80px 10%;
     text-align:center;
@@ -578,7 +577,7 @@
 
 
 
-/* Testimonials */
+
 .testimonials{
     padding:80px 10%;
     text-align:center;
@@ -592,16 +591,6 @@
     border-radius:12px;
 }
 
-/* Footer */
-footer{
-    background-color: #000;
-    text-align:center;
-    padding:40px;
-}
-
-.footer-content h3{
-    margin-bottom:10px;
-}
 
 
 body{
