@@ -57,21 +57,14 @@
       top:0;
       z-index:1000;
       backdrop-filter:blur(14px);
-      background:c;
+      background:black;
       border-bottom:1px solid var(--border);
     }
     body.light header{
       background:rgba(255,255,255,.75);
     }
 
-    .navbar{
-      height:78px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
-
+    
 
     .logo{
       display:flex;
