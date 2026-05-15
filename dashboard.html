@@ -9,97 +9,211 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="dashboard.css">
 </head>
+
 <body>
 
+  <div class="dashboard-container">
 
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-
-
-<section>
-
-<div class="dashboard">
-
-  
-  <div class="sidebar">
-    <h2>LensRent</h2>
-
-    <button class="active" onclick="showPage('dashboard', this)">Dashboard</button>
-    <button onclick="showPage('bookings', this)">Bookings</button>
-    <button onclick="showPage('rentals', this)">Rentals</button>
-    <button onclick="showPage('payments', this)">Payments</button>
-    <button onclick="toggleTheme()">Toggle Theme</button>
-  </div>
-
-  
-  <div class="main">
-
-    
-    <div id="dashboard" class="page active">
-
-      <div class="cards">
-        <div class="card">
-          <h3>Total Bookings</h3>
-          <h2>142</h2>
-        </div>
-
-        <div class="card">
-          <h3>Active Rentals</h3>
-          <h2>9</h2>
-        </div>
-
-        <div class="card">
-          <h3>Pending Payments</h3>
-          <h2>₹18,200</h2>
-        </div>
+      <div class="logo">
+        <a href="index.html">
+          <span class="bl">Rental studio</span>
+         
+        </a>
       </div>
 
-      <section class="dashboard-section">
-        <div class="section-header">
-          <h2>Upcoming Returns</h2>
-          <a href="#">View All</a>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li><a href="">Equipment Rentals</a></li>
+        <li><a href="">Bookings</a></li>
+        <li><a href="">Inventory</a></li>
+        <li><a href="">Customers</a></li>
+        <li><a href="">Payments</a></li>
+        <li><a href="">Reports</a></li>
+        <li><a href="">Settings</a></li>
+        <li><a href="">Logout</a></li>
+      </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Topbar -->
+      <div class="topbar">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search equipment...">
+        </div>
+<div class="topbar-right">
+
+  <!-- Notification Icon -->
+  <div class="notification">
+    <i class="fa-solid fa-bell"></i>
+    <span class="notify-badge">3</span>
+  </div>
+
+  <div class="top-buttons">
+
+    <!-- Theme Button -->
+    <button class="toggle-btn" id="themeToggle">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- RTL Button -->
+    <button class="toggle-btn" id="rtlToggle">
+      RTL
+    </button>
+
+  </div>
+
+  <img src="images/image-1.jpg" alt="Profile" class="profile">
+
+</div>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero">
+
+        <div class="hero-text">
+          <h1>Welcome Back Admin</h1>
+          <p>
+            Manage your rental photo studio bookings and equipment efficiently.
+          </p>
+          <button>
+            Explore Dashboard
+          </button>
         </div>
 
-        <div class="returns-list">
-
-          <div class="return-item">
-            <div class="return-info">
-              <h3>Canon EOS R5</h3>
-              <p>Customer: Arjun Kumar</p>
-            </div>
-            <div>
-              <span class="return-date">16 May 2026</span>
-              <span class="status due-soon">Due Soon</span>
-            </div>
-          </div>
-
-          <div class="return-item">
-            <div class="return-info">
-              <h3>Sony A7 III</h3>
-              <p>Customer: Priya Sharma</p>
-            </div>
-            <div>
-              <span class="return-date">17 May 2026</span>
-              <span class="status on-time">On Time</span>
-            </div>
-          </div>
-
-          <div class="return-item">
-            <div class="return-info">
-              <h3>24-70mm Lens</h3>
-              <p>Customer: Rahul Verma</p>
-            </div>
-            <div>
-              <span class="return-date">18 May 2026</span>
-              <span class="status extended">Extended</span>
-            </div>
-          </div>
-
+        <div class="hero-image">
+          <img src="images/pexels-paulseling-15945023.jpg" alt="">
         </div>
+
       </section>
+
+      <!-- Stats -->
+      <section class="stats-grid">
+
+        <div class="stat-card">
+          <h2>156</h2>
+          <h3>Total Rentals</h3>
+          <p>
+            Total photography equipment rented this month.
+          </p>
+        </div>
+
+        <div class="stat-card">
+          <h2>84</h2>
+          <h3>Customers</h3>
+          <p>
+            Active photographers and clients using your services.
+          </p>
+        </div>
+
+        <div class="stat-card">
+          <h2>32</h2>
+          <h3>Available Cameras</h3>
+          <p>
+            DSLR and mirrorless cameras ready for booking.
+          </p>
+        </div>
+
+        <div class="stat-card">
+          <h2>₹1.2L</h2>
+          <h3>Monthly Revenue</h3>
+          <p>
+            Earnings generated from equipment rentals.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- Analytics -->
+      <section class="analytics-section">
+
+        <div class="analytics-card large-card">
+          <h2>Rental Analytics</h2>
+          <img src="images/ChatGPT Image May 15, 2026, 10_15_46 AM.png" alt="anlaytics">
+        </div>
+
+        <div class="analytics-card">
+          <h2>Booking Status</h2>
+          <div class="progress-box">
+            <div class="progress-bar"></div>
+          </div>
+          <p>82% Equipment Currently Booked</p>
+        </div>
+
+        <div class="analytics-card">
+          <h2>Studio Usage</h2>
+          <div class="circle">
+            92%
+          </div>
+          <p>Studio Occupancy Rate</p>
+        </div>
+
+      </section>
+
+      <!-- Equipment -->
+      <section class="projects-section">
+
+        <div class="section-title">
+          <h2>Popular Equipment</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <img src="images/dsnl-image.jpg" alt="">
+            <div class="project-content">
+              <h3>DSLR Cameras</h3>
+              <p>
+                Canon, Sony and Nikon professional cameras.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/canon-jpg.avif" alt="">
+            <div class="project-content">
+              <h3>Premium Lenses</h3>
+              <p>
+                Wide-angle, portrait and zoom lenses.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/lightin-image.jpg" alt="">
+            <div class="project-content">
+              <h3>Lighting Kits</h3>
+              <p>
+                Professional lighting for studio shoots.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="dashboard.js"></script>
+
+
 
  
       
@@ -114,35 +228,9 @@
   
 
 
-<script>
-
-  const themeBtn = document.getElementById("themeBtn");
-
-  themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light");
-
-    if(document.body.classList.contains("light")){
-      themeBtn.innerHTML = "☀️";
-    } else {
-      themeBtn.innerHTML = "🌙";
-    }
-  });
 
 
 
-  const rtlBtn = document.getElementById("rtlBtn");
 
-  rtlBtn.addEventListener("click", () => {
-    const html = document.documentElement;
+  
 
-    if(html.getAttribute("dir") === "ltr"){
-      html.setAttribute("dir","rtl");
-    } else {
-      html.setAttribute("dir","ltr");
-    }
-  });
-
-</script>
-
-</body>
-</html>

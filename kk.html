@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Rental Photo Studio Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="kk.css">
+
+
+</head>
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <div class="logo"><span>Rental</span> <span>Studio</span></div>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Equipment Rentals</li>
+      <li>Bookings</li>
+      <li>Inventory</li>
+      <li>Customers</li>
+      <li>Payments</li>
+      <li>Reports</li>
+      <li>Settings</li>
+      <li>Logout</li>
+    </ul>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <input class="search" placeholder="Search equipment...">
+
+      <div class="top-right">
+        <!-- Dark/Light -->
+        <button class="toggle" id="themeToggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- RTL -->
+        <button class="toggle" id="rtlToggle">
+          RTL
+        </button>
+
+        <div class="profile"></div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <h1>Welcome Back Admin</h1>
+      <p>Manage your rental photo studio bookings and equipment efficiently.</p>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h2>156</h2>
+        <p>Total Rentals</p>
+      </div>
+      <div class="card">
+        <h2>84</h2>
+        <p>Customers</p>
+      </div>
+      <div class="card">
+        <h2>32</h2>
+        <p>Available Cameras</p>
+      </div>
+      <div class="card">
+        <h2>₹1.2L</h2>
+        <p>Monthly Revenue</p>
+      </div>
+    </section>
+
+    <section class="graph-card">
+      <div class="graph-header">
+        <h2>Rental Analytics</h2>
+        <span>Monthly Bookings</span>
+      </div>
+
+      <div class="graph-area">
+        <div class="y-labels">
+          <span>50</span>
+          <span>40</span>
+          <span>30</span>
+          <span>20</span>
+          <span>10</span>
+        </div>
+
+        <div class="bars">
+          <div class="bar" style="height:45%"><span>Jan</span></div>
+          <div class="bar" style="height:60%"><span>Feb</span></div>
+          <div class="bar" style="height:75%"><span>Mar</span></div>
+          <div class="bar" style="height:55%"><span>Apr</span></div>
+          <div class="bar" style="height:90%"><span>May</span></div>
+          <div class="bar" style="height:70%"><span>Jun</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+/* Theme toggle */
+const themeToggle=document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click",()=>{
+  document.body.classList.toggle("light-mode");
+  const icon=themeToggle.querySelector("i");
+
+  if(document.body.classList.contains("light-mode")){
+    icon.classList.replace("fa-moon","fa-sun");
+  }else{
+    icon.classList.replace("fa-sun","fa-moon");
+  }
+});
+
+/* RTL toggle */
+const rtlToggle=document.getElementById("rtlToggle");
+
+rtlToggle.addEventListener("click",()=>{
+  document.body.classList.toggle("rtl");
+});
+</script>
+
+</body>
+</html>

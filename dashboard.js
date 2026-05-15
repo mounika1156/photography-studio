@@ -1,33 +1,24 @@
+/* ================= DARK/LIGHT MODE ================= */
+const themeToggle = document.getElementById("themeToggle");
 
-function show(id, btn){
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
 
-  document.querySelectorAll(".page").forEach(p=>{
-    p.classList.remove("active");
-  });
+  const icon = themeToggle.querySelector("i");
 
-  document.getElementById(id).classList.add("active");
-
-  document.querySelectorAll(".btn").forEach(b=>{
-    b.classList.remove("active");
-  });
-
-  btn.classList.add("active");
-
-  document.getElementById("title").innerText =
-    id.charAt(0).toUpperCase() + id.slice(1);
-}
-
-function toggleTheme(){
-  document.body.classList.toggle("light");
-}
+  if(document.body.classList.contains("light-mode")){
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  }else{
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+});
 
 
+/* ================= RTL MODE ================= */
+const rtlToggle = document.getElementById("rtlToggle");
 
-
-
-
-
-
-
-
-
+rtlToggle.addEventListener("click", () => {
+  document.body.classList.toggle("rtl");
+});

@@ -64,13 +64,7 @@
       background:rgba(255,255,255,.75);
     }
 
-    .navbar{
-      height:78px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
+    
 
 
     .logo{
@@ -94,7 +88,7 @@
       font-weight:700;
     }
   .navbar{
-  position:fixed;
+  position:sticky;
   top:0;
   left:0;
   width:100%;
@@ -262,6 +256,120 @@
 
 
 
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f1117;
+    color:#ffffff;
+}
+
+/* About Hero Section */
+.about-hero{
+    
+    background-image: url(images/background.image-2.jpg);
+    background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    padding:40px 8%;
+}
+
+.about-content{
+    max-width:900px;
+    text-align:center;
+}
+
+.about-content span{
+    color:#6948f5;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.about-content h1{
+    font-size:56px;
+    line-height:1.2;
+    margin:20px 0;
+}
+
+.about-content p{
+    color:#b0b3c0;
+    font-size:18px;
+    line-height:1.8;
+    max-width:750px;
+    margin:0 auto 35px;
+}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.stat h3{
+    font-size:34px;
+    color:#6948f5;
+    margin-bottom:8px;
+}
+
+.stat p{
+    font-size:15px;
+    color:#b0b3c0;
+    margin:0;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#6948f5;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:#6948f5;
+    transform:translateY(-3px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .about-content h1{
+        font-size:38px;
+    }
+
+    .about-content p{
+        font-size:16px;
+    }
+
+    .hero-stats{
+        gap:30px;
+    }
+
+    .stat h3{
+        font-size:28px;
+    }
+}
+
+
+
+
 .about-premium{
   width:90%;
   margin:auto;
@@ -407,6 +515,7 @@
       justify-content: space-evenly;
       height: 200px;
       width: 100%;
+      margin-top: 40px;
     }
     
     

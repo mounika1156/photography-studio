@@ -64,14 +64,7 @@
       background:rgba(255,255,255,.75);
     }
 
-    .navbar{
-      height:78px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
-
+    
 
     .logo{
       display:flex;
@@ -94,7 +87,7 @@
       font-weight:700;
     }
   .navbar{
-  position:fixed;
+  position:sticky;
   top:0;
   left:0;
   width:100%;
@@ -103,7 +96,7 @@
   align-items:center;
   padding:22px 8%;
   z-index:1000;
-  background:rgba(0,0,0,0.20);
+  background:rgb(0, 0, 0);
   backdrop-filter:blur(10px);
   transition:0.35s ease;
 }
@@ -272,9 +265,6 @@
       font-family:'Poppins', sans-serif;
     }
 
-    body{
-      background:#000;
-    }
 
     .hero{
       width:100%;
@@ -390,10 +380,7 @@
       background:rgba(255,255,255,0.12);
       transform:translateY(-5px);
     }
-    body{
-    
-    background:#f5f5f5;
-}
+
 
 .about-us{
     padding:80px 50px;
@@ -593,9 +580,6 @@
 
 
 
-body{
-    background:#f5f5f5;
-}
 
 .services{
      margin-left: 55px;
@@ -630,9 +614,6 @@ body{
     font-family: Arial, sans-serif;
 }
 
-body{
-    background:#f8f8f8;
-}
 
 .studio-showcase{
     width:100%;
@@ -761,9 +742,7 @@ body{
 }
 
 
-body{
-    background:#f5f5f5;
-}
+
 
 .rental-packages{
     padding:70px 50px;
@@ -828,22 +807,36 @@ body{
     
     .quiker-links li{
         list-style: none;
+        color: white;
     
 
     }
+
+   .footer1 p{
+    color: white;
+   }
     .quiker-links h4{
         margin-bottom: 10px;
+        color: white;
     }
+
     .add{
-        text-align: center;}
+        text-align: center;
+      color: white;}
     .add h4{
         margin-bottom: 20px;
+        color: white;
     }
     .social h4{
         margin-bottom: 20px;
+        color: white;
+    }
+    .social svg{
+      color: white;
     }
     .logo p{
         margin-bottom: 20px;
+        color: white;
     }
   .footer-bottom{
   border-top:1px solid #222222;
@@ -862,14 +855,15 @@ body{
   gap: 20px;
  
  
+ 
 }
 .footer-legal li{
   list-style: none;
-  color: black;
+  color: rgb(255, 255, 255);
  
 }
 .footer-legal a{
-  color: #777777;
+  color: #ffffff;
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -956,7 +950,7 @@ body{
     transform:scale(1.03);
 }
 body{
-    background:#f5f5f5;
+    background:#252424;
 }
 
 .testimonials{

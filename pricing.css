@@ -94,7 +94,7 @@
       font-weight:700;
     }
   .navbar{
-  position:fixed;
+  position:sticky;
   top:0;
   left:0;
   width:100%;
@@ -427,6 +427,34 @@ body.light .pricing-overlay{
 .featured:hover{
     transform: scale(1.04) translateY(-8px);
 }
+
+
+.featured{
+    border: 2px solid var(--primary);
+    transform: scale(1.04);
+    position: relative;
+}
+
+.featured:hover{
+    transform: scale(1.04) translateY(-8px);
+}
+
+.popular-badge{
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 6px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+}
+
+
+
 
 @media(max-width:768px){
     .section-header h2{

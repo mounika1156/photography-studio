@@ -65,13 +65,7 @@
       background:rgba(255,255,255,.75);
     }
 
-    .navbar{
-      height:78px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
+ 
 
 
     .logo{
@@ -95,7 +89,7 @@
       font-weight:700;
     }
   .navbar{
-  position:fixed;
+  position:sticky;
   top:0;
   left:0;
   width:100%;
@@ -104,7 +98,7 @@
   align-items:center;
   padding:22px 8%;
   z-index:1000;
-  background:rgba(0,0,0,0.20);
+  background:rgb(19, 17, 17);
   backdrop-filter:blur(10px);
   transition:0.35s ease;
 }
