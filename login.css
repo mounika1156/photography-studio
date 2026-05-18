@@ -10,8 +10,7 @@ body{
   overflow-x:hidden;
   transition:0.4s;
 }
- 
-/* ================= LOGIN SECTION ================= */
+
  
 .login-section{
   min-height:100vh;
@@ -30,7 +29,6 @@ body{
   transition:0.4s;
 }
  
-/* ================= LOGIN BOX ================= */
  
 .login-box{
   width:100%;
@@ -53,7 +51,7 @@ body{
   transition:0.4s;
 }
  
-/* ================= BUTTON WRAPPER ================= */
+
  
 .theme-wrapper{
   display:flex;
@@ -61,8 +59,7 @@ body{
   gap:10px;
   margin-bottom:12px;
 }
- 
-/* ================= THEME BUTTON ================= */
+
  
 .theme-toggle{
   display:flex;
@@ -91,7 +88,7 @@ body{
   background:#6948f5;
 }
  
-/* ================= RTL BUTTON ================= */
+
  
 .rtl-toggle{
   padding:9px 14px;
@@ -116,7 +113,7 @@ body{
   transform:translateY(-3px);
 }
  
-/* ================= LOGO ================= */
+
  
 .logo{
   text-align:center;
@@ -134,7 +131,7 @@ body{
   color:#6948f5;
 }
  
-/* ================= TITLE ================= */
+
  
 .login-box h1{
   text-align:center;
@@ -200,8 +197,7 @@ body{
 .input-box input:focus{
   border-color:#6948f5;
 }
- 
-/* ================= OPTIONS ================= */
+
  
 .options{
   display:flex;
@@ -312,8 +308,7 @@ body{
 .social-btn:hover{
   background:black
 }
- 
-/* ================= SIGNUP ================= */
+
  
 .signup-text{
   text-align:center;
@@ -333,7 +328,7 @@ body{
   font-weight:600;
 }
  
-/* ================= LIGHT MODE ================= */
+
  
 body.light-mode{
   background:#f1f5f9;
@@ -415,6 +410,7 @@ body.rtl .remember{
     opacity:1;
     transform:translateY(0);
   }
+}
  
 
  

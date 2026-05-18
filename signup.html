@@ -1,166 +1,220 @@
-
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>photography</title>
-        <link rel="stylesheet" href="signup.css" >
-    </head>
-    <body>
-
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+ <meta charset="UTF-8">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>SolarTech</title>
+ 
+ <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+ 
+<!-- GOOGLE FONT -->
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+<!-- FONT AWESOME -->
+ 
+ <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+<!-- CSS -->
+ 
+ <link rel="stylesheet" href="signup.css">
+ 
+</head>
  
 <body>
  
+
+ 
 <section class="signup-section">
  
-  <div class="signup-box">
+ <div class="signup-box">
  
-   
+
  
-    <div class="logo">
+ <div class="theme-wrapper">
  
-     <a href="#home" class="logo"> Lens Rent</a>
-     
+ <button class="theme-toggle" id="themeToggle">
  
-    </div>
+ <i class="fa-solid fa-moon"></i>
  
+ <span></span>
  
+ </button>
  
-    <h1>Create Account</h1>
+ <button class="rtl-toggle" id="rtlToggle">
  
-    <p class="subtitle">
-      Start your photography studio with us today
-    </p>
+ RTL
  
-    <form>
+ </button>
  
-      <div class="double-input">
+ </div>
  
-        <div class="input-group">
+
  
-          <label>First Name</label>
+ <div class="logo" onclick="document.location='index.html'">
  
-          <input type="text" placeholder="Enter first name">
+ <span class="bl">LensRent</span>
  
-        </div>
+ </div>
  
-        <div class="input-group">
+
  
-          <label>Last Name</label>
+ <h1>Create Account</h1>
  
-          <input type="text" placeholder="Enter last name">
+ <p class="subtitle">
+ Join photography and start your renewable energy journey.
+ </p>
  
-        </div>
+
  
-      </div>
+ <form>
  
-     
+
  
-      <div class="input-group">
+ <div class="double-input">
  
-        <label>Email Address</label>
+ <div class="input-group">
  
-        <input type="email" placeholder="Enter your email">
+ <label>First Name</label>
  
-      </div>
+ <input type="text" placeholder="First name">
  
-   
+ </div>
  
-      <div class="input-group">
+ <div class="input-group">
  
-        <label>Phone Number</label>
+ <label>Last Name</label>
  
-        <input type="tel" placeholder="Enter phone number">
+ <input type="text" placeholder="Last name">
  
-      </div>
+ </div>
  
+ </div>
  
+
  
-      <div class="double-input">
+ <div class="input-group">
  
-        <div class="input-group">
+ <label>Email Address</label>
  
-          <label>Password</label>
+ <input type="email" placeholder="Enter email">
  
-          <input type="password" placeholder="Create password">
+ </div>
  
-        </div>
+<!-- PHONE -->
  
-        <div class="input-group">
+ <div class="input-group">
  
-          <label>Confirm Password</label>
+ <label>Phone Number</label>
  
-          <input type="password" placeholder="Confirm password">
+ <input type="tel" placeholder="Phone number">
  
-        </div>
+ </div>
  
-      </div>
+<!-- PASSWORD -->
  
-     
+ <div class="double-input">
  
-      <div class="terms">
+ <div class="input-group">
  
-        <input type="checkbox">
+ <label>Password</label>
  
-        <p>
-          I agree to the
-          <a href="#">Terms & Conditions</a>
-          and
-          <a href="#">Privacy Policy</a>
-        </p>
+ <input type="password" placeholder="Password">
  
-      </div>
+ </div>
  
-     
+ <div class="input-group">
  
-      <button class="signup-btn">
+ <label>Confirm Password</label>
  
-        Create Account
+ <input type="password" placeholder="Confirm">
  
-      </button>
+ </div>
  
-    </form>
+ </div>
  
-   
+
  
-    <div class="divider">
+ <div class="terms">
  
-      <span>OR SIGN UP WITH</span>
+ <input type="checkbox">
  
-    </div>
+ <p>
  
-   
+ I agree to the
  
-    <div class="social-buttons">
+ <a href="#">Terms</a>
  
-      <button class="social-btn">
-        Google
-      </button>
+ &
  
-      <button class="social-btn">
-        Facebook
-      </button>
+ <a href="#">Privacy Policy</a>
  
-    </div>
+ </p>
  
-   
+ </div>
  
-    <p class="login-text">
+
  
-      Already have an account?
+ <button class="signup-btn">
  
-      <a href="#" onclick="document.location='login.html'">Login</a>
+ Create Account
  
-    </p>
+ </button>
  
-  </div>
+ </form>
+ 
+
+ 
+ <div class="divider">
+ 
+ <span>OR SIGN UP WITH</span>
+ 
+ </div>
+ 
+
+ 
+ <div class="social-buttons">
+ 
+ <button class="social-btn">
+ 
+ Google
+ 
+ </button>
+ 
+ <button class="social-btn">
+ 
+ Facebook
+ 
+ </button>
+ 
+ </div>
+ 
+<!-- LOGIN -->
+ 
+ <p class="login-text">
+ 
+ Already have an account?
+ 
+ <a href="login.html">Login</a>
+ 
+ </p>
+ 
+ </div>
  
 </section>
+ 
+
+ 
+<script src="signup.js"></script>
  
 </body>
  
 </html>
- 
  
